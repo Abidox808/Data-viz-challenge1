@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Data Dashboard</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="script.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+    .chart-container {
+      width: 48%;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    .chart-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.2em;
+    }
+    svg {
+      display: block;
+      margin: auto;
+    }
+    .tooltip {
+      position: absolute;
+      background: white;
+      border: 1px solid #ccc;
+      padding: 5px;
+      border-radius: 5px;
+      pointer-events: none;
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Student Data Dashboard    -   By Zine El abidine Achaghour</h1>
+  <div class="container">
+    <div class="chart-container">
+      <h2>Age Distribution</h2>
+      <div id="age-chart"></div>
+    </div>
+    <div class="chart-container">
+      <h2>School Type Distribution</h2>
+      <div id="school-type-chart"></div>
+    </div>
+    <div class="chart-container">
+      <h2>Repetition vs Motivation</h2>
+      <div id="repetition-motivation-chart"></div>
+    </div>
+    <div class="chart-container">
+      <h2>Academic Performance Overview</h2>
+      <div id="academic-performance-chart"></div>
+    </div>
+  </div>
+</body>
+</html>
