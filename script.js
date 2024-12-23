@@ -68,7 +68,7 @@ d3.csv("dataset.csv").then(function(data) {
         .text(d => d.length);
     })();
 
-    // School Type Pie Chart
+    // Interne Externe Distribution
     (function() {
       const width = 300, height = 300, radius = Math.min(width, height) / 2;
       const chart = d3.select("#school-type-chart")
